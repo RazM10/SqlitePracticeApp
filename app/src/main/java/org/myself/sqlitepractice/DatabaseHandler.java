@@ -62,4 +62,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return pList;
     }
 
+    void deleteAll(){
+        SQLiteDatabase db=this.getWritableDatabase();
+        String q="delete from "+TABLE_NAME;
+        db.execSQL(q);
+    }
+
 }

@@ -32,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
             android:layout_marginTop="16dp"
-            android:hint="Enter Name" />
+            android:hint="Enter Name"
+            android:id="@+id/name_et"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,39 +48,39 @@
             android:layout_margin="16dp"
             />
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="******"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="15dp"
-            android:textSize="16sp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Age"
-            android:textSize="16sp"
-            android:layout_margin="16dp"/>
-
-        <EditText
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
+            android:hint="******"
+            android:inputType="textPassword"
             android:layout_marginTop="16dp"
-            android:hint="Enter Age" />
+            android:layout_marginStart="17dp"
+            android:textSize="16sp"
+            android:id="@+id/pass_et"/>
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:layout_margin="16dp"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/save_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/showAll_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE ALL"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/deleteAll_btn"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
